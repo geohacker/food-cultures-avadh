@@ -1,0 +1,223 @@
+<%-include('includes/head')%>
+    <!-- <div class="container">
+        <div class="simpl-btn align-items-center text-center">
+            <h3 class="text-center">Crops</h3>
+            <a href="/sheets/barley"><button class="btn btn-primary">Barley</button></a>
+            <a href="/sheets/dairy"><button class="btn btn-default">Dairy</button></a>
+            <a href="/sheets/fish"><button class="btn btn-danger">Fish</button></a>
+            <a href="/sheets/fruits"><button class="btn btn-info">Fruits</button></a>
+            <a href="/sheets/hunger"> <button class="btn btn-warning">Hunger</button></a>
+            <a href="/sheets/land"><button class="btn btn-dark">Land</button></a>
+            <a href="/sheets/sugarcane"> <button class="btn btn-success">Sugarcane</button></a>
+        </div>
+
+    </div> -->
+    </head>
+
+    <body>
+        <div class="container container-type-1">
+            <div id="contentEnglish" class="contentEnglishToggle">
+
+
+                <div class="row">
+                    <div class="col-lg-12 landing-intro">
+                        <h2 class="title-main">
+                            Recovering food narratives – stories from western Avadh
+                        </h2><br>
+                        <p>Today, diets in western Avadh (Uttar Pradesh, India) mainly consist of roti (made of wheat), highly polished rice, potatoes, sugar, tea, and processed foods like biscuits. Only some families consume protein-rich foods like dairy, pulses, fish and meat every day—for the rest, these are now occasional delicacies. But what were diets like 30-40 years ago, and how have they changed? How are these changes linked to changes in land, policy and power structures?</p>
+                        <p>The food mat below represents findings from our multidisciplinary study on food and farming transitions in western Avadh. To learn more about specific crops and foods - how their production and consumption has changed,  what contributed to these changes and how people of different classes, castes or religions have experienced them, click on the icon of that crop/food. You can also learn more about hunger and changes in land by clicking on those terms on the mat.</p>
+                        <p>For more details about this research, <a href="#food-and-farming">go here</a></p>
+                    </div>
+                    <div class="col-lg-6 imageHomeDiv">
+                        <center>
+                            <div class="imageHome">
+                                <figure>
+                                    <img src="/images/main/mapData/Map1_English.jpg">
+                                    <figcaption id="captionHome1">Location of the study region</figcaption>
+                                </figure>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-lg-6 imageHomeDiv">
+                        <center>
+                            <div class="imageHome">
+                                <figure>
+                                    <img src="/images/main/mapData/Map2_English.jpg" id="imageHome2">
+                                    <figcaption id="captionHome2">An ahistorical sketch of the study region, depicting the various features (some no longer in existence) described by respondents. </figcaption>
+                                </figure>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="before-foodplate">
+                        <h5>Our findings are available on this portal, primarily arranged by crop/food. Click on any of the items on the mat below to learn more.</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="contentHindi " class="contentHindiToggle ">
+
+
+                <div class="row ">
+                    <div class="col-lg-12 landing-intro">
+                        <h2 class="title-main ">
+                            <%=homeTitleHindi%>
+                        </h2><br>
+                        <p class="landing-para ">
+                            <%-homeTextHindi1%>
+                        </p>
+                        <br>
+                        <button onclick="readMore()" class="myBtn">Read more</button>
+                    </div>
+                    <div class="col-lg-6 imageHomeDiv">
+                        <div class="imageHome">
+                            <figure>
+                                <img src="/images/main/mapData/Map1_Hindi.jpg">
+                                <figcaption id="captionHome1">Location of the study region</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 imageHomeDiv">
+                        <div class="imageHome">
+                            <figure>
+                                <img src="/images/main/mapData/Map2_Hindi.jpg" id="imageHome2">
+                                <figcaption id="captionHome2">An ahistorical sketch of the study region, depicting the various features (some no longer in existence) described by respondents. The villages where the consumption survey was conducted are marked with an asterisk.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="before-foodplate">
+                        <h5></h5>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="row ">
+                        <center>
+                            <div class="col-lg-3 selection-foodplate ">
+                                <a href="/avadh/sheets/Sugarcane">
+                                    <div class="oval"><img src="/images/individual-elements/Barley_And_Millets.png"></div>
+                                </a>
+                                <a href="/avadh/sheets/Fish">
+                                    <div class="oval"><img src="/images/individual-elements/Fish.png"></div>
+                                </a>
+                                <a href="/avadh/sheets/Dairy">
+                                    <div class="oval "><img src="/images/individual-elements/Dairy.png"></div>
+                                </a>
+                                <div class="oval"><img src="/images/individual-elements/Pulses.png"></div>
+                                <div class="oval"><img src="/images/individual-elements/Meat.png"></div>
+                                <div class="oval"><img src="/images/individual-elements/Collected_Foods.png"></div>
+                                <a href="/avadh/sheets/Land">
+                                    <div class="oval">Land</div>
+                                </a>
+                            </div>
+                            <br>
+                            <div class="col-lg-3 selection-foodplate ">
+                                <div class="oval"><img src="/images/individual-elements/Groundnuts_and_Oilseeds.png"></div>
+                                <a href="/avadh/sheets/Fruits">
+                                    <div class="oval"><img src="/images/individual-elements/Fruits.png"></div>
+                                </a>
+                                <a href="/avadh/sheets/Barley">
+                                    <div class="oval"><img src="/images/individual-elements/Barley_And_Millets.png"></div>
+                                </a>
+                                <div class="oval "><img src="/images/individual-elements/Wheat_And_Paddy.png"></div>
+                                <div class="oval "><img src="/images/individual-elements/Vegetables.png"></div>
+                                <a href="/avadh/sheets/Hunger">
+                                    <div class="oval "><img src="/images/individual-elements/Hunger.png"></div>
+                                </a>
+
+                            </div>
+                        </center>
+                    </div>
+                    <div class="contentEnglishToggle" id="contentEnglish">
+                        <div class="parent-foodplate">
+                            <a href="/avadh/sheets/Land"><img class="foodplate" src="/images/individual-elements/Land.png"></a>
+                            <div class="childfp groundnuts">
+                                <a href="/avadh/sheets/Groundnuts"><img src="/images/individual-elements/Groundnuts_and_Oilseeds.png"></a>
+                            </div>
+                            <div class="childfp fish">
+                                <a href="/avadh/sheets/Fish"><img src="/images/individual-elements/Fish.png"></a>
+                            </div>
+                            <div class="childfp dairy">
+                                <a href="/avadh/sheets/Dairy"><img src="/images/individual-elements/dairy.png"></a>
+                            </div>
+                            
+                            <div class="childfp meat">
+                                <a href=/avadh/sheets/Meat><img src="/images/individual-elements/Meat.png"></a>
+                            </div>
+                            <div class="childfp pulses">
+                                <a href="/avadh/sheets/Pulses"><img src="/images/individual-elements/Pulses.png"></a>
+                            </div>
+                            <div class="childfp greens">
+                                <a href="/avadh/sheets/Greens"><img src="/images/individual-elements/Vegetables.png"></a>
+                            </div>
+                            <div class="childfp wheat">
+                                <a href="/avadh/sheets/Wheat"><img src="/images/individual-elements/Wheat_And_Paddy.png"></a>
+                            </div>
+                            <div class="childfp ocf">
+                                <a href=/avadh/sheets/ocf><img src="/images/individual-elements/Collected_Foods.png"></a>
+                            </div>
+                            <div class="childfp hunger">
+                                <a href="/avadh/sheets/Hunger"><img src="/images/individual-elements/Hunger.png"></a>
+                            </div>
+                            <div class="childfp fruits">
+                                <a href="/avadh/sheets/Fruits"><img src="/images/individual-elements/Fruits.png"></a>
+                            </div>
+                            <div class="childfp jaggery">
+                                <a href="/avadh/sheets/Sugarcane"><img src="/images/individual-elements/Sugarcane_And_Jaggery.png"></a>
+                            </div>
+                            <div class="childfp barley">
+                                <a href="/avadh/sheets/Barley"><img src="/images/individual-elements/Barley_And_Millets.png"></a>
+                            </div>
+                        </div>
+                        <div class="all">
+                            <a href="/avadh/all"><img src="/images/individual-elements/All.png"></a>
+                        </div> 
+                    </div>
+                    <div class="contentHindiToggle" id="contentHindi">
+                        <div class="parent-foodplate">
+                            <a href="/avadh/sheets/Land"><img class="foodplate" src="/images/individual-elements/Land.png"></a>
+                            <div class="childfp groundnuts">
+                                <a href="/avadh/sheets/groundnuts"><img src="/images/individual-elements/hindi/Groundnuts_and_Oilseeds.png"></a>
+                            </div>
+                            <div class="childfp fish">
+                                <a href="/avadh/sheets/Fish"><img src="/images/individual-elements/hindi/Fish.png"></a>
+                            </div>
+                            <div class="childfp dairy">
+                                <a href="/avadh/sheets/Dairy"><img src="/images/individual-elements/hindi/Dairy.png"></a>
+                            </div>
+                            <div class="childfp meat">
+                                <a href=#><img src="/images/individual-elements/hindi/Meat.png"></a>
+                            </div>
+                            <div class="childfp pulses">
+                                <a href="/avadh/sheets/Pulses"><img src="/images/individual-elements/hindi/Pulses.png"></a>
+                            </div>
+                            <div class="childfp greens">
+                                <a href=#><img src="/images/individual-elements/hindi/Vegetables.png"></a>
+                            </div>
+                            <div class="childfp wheat">
+                                <a href=#><img src="/images/individual-elements/hindi/Wheat_And_Paddy.png"></a>
+                            </div>
+                            <div class="childfp ocf">
+                                <a href=#><img src="/images/individual-elements/hindi/Collected_Foods.png"></a>
+                            </div>
+                            <div class="childfp hunger">
+                                <a href="/avadh/sheets/Hunger"><img src="/images/individual-elements/hindi/Hunger.png"></a>
+                            </div>
+                            <div class="childfp fruits">
+                                <a href="/avadh/sheets/Fruits"><img src="/images/individual-elements/hindi/Fruits.png"></a>
+                            </div>
+                            <div class="childfp jaggery">
+                                <a href="/avadh/sheets/Sugarcane"><img src="/images/individual-elements/hindi/Sugarcane_And_Jaggery.png"></a>
+                            </div>
+                            <div class="childfp barley">
+                                <a href="/avadh/sheets/Barley"><img src="/images/individual-elements/hindi/Barley_And_Millets.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%-include('includes/foot')%>
